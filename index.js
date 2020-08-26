@@ -88,8 +88,9 @@ if(h==="00"  &&  m==="00" && s==="00" ||s1<0){
     minutes.innerHTML=m;
     seconds.innerHTML=s;
 }
-times.innerHTML=sethours+":"+setminutes+"场"
+times.innerHTML=sethours+":"+setminutes+"场";
 }
+
 
 function add0(num){
     if(num<=9 && num>=0){

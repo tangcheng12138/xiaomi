@@ -74,12 +74,13 @@ header .header_right li{
 header .shop_car{
     background-color: rgba(255,255,255,.1);
     float: right;
-    margin-right: -300px;
+    margin-right: -333px;
     font-size: 12px;
     color: rgba(255,255,255,.5);
     height: 21px;
     padding: 10px 20px;
     transition: background-color 1s;
+    position: relative;
 
 }
 
@@ -97,6 +98,22 @@ header .shop_car span svg{
     width: 16px;
     fill: rgba(255,255,255,.5);
     transition: fill 1s;
+}
+
+header .shop_car .shop_car_downbox{
+    position: absolute;
+    top: 100%;
+    height: 0px;
+    width: 400px;
+    right: -1px;
+    background: #fff;
+    box-shadow: 3px 0px 3px rgba(0,0,0,.1),-3px 0px 3px rgba(0,0,0,.1);
+    z-index: 5;
+    transition: height 500ms;
+}
+
+header .shop_car:hover .shop_car_downbox{
+    height: 102px;
 }
 
 nav{
@@ -163,6 +180,10 @@ nav .banner_header .small_nav li a{
 nav .banner_header .small_nav li:hover{
     color: orangered;
     cursor: pointer;
+}
+
+nav .banner_header .small_nav li:nth-last-child(2):hover a{
+    color: orangered;
 }
 
 nav .banner_header .small_nav li:last-child:hover a{
